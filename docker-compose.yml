@@ -1,0 +1,8 @@
+version: '3'
+services:
+    nginx-server:
+        image: nginx:latest
+        ports:
+            - "5050:80"
+        volumes:
+            - /Users/ms/dev/_project/infostock/infostock-front/dist/:/usr/share/nginx/html
